@@ -10,7 +10,7 @@ This project uses the following stack
 
 Guest appearance by the following made this quick 
 + [Webstorm](https://www.jetbrains.com/help/webstorm/index.html])
-+ [Claude](https://www.claude.ai)]
++ [Claude](https://www.claude.ai)
  
 
 ## Getting Started
