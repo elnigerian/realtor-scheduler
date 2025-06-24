@@ -46,7 +46,7 @@ export function MeetingScheduler() {
             : "skip"
     );
 
-    const existingMeetings = useQuery(
+    const existingTours = useQuery(
         api.tours.getByRealtorAndDate,
         selectedRealtor && selectedDate
             ? {
@@ -204,7 +204,7 @@ export function MeetingScheduler() {
                                 workingHours={selectedRealtorData.realtor.workingHours}
                                 selectedDate={format(selectedDate, "yyyy-MM-dd")}
                                 blockedSlots={blockedSlots || []}
-                                existingMeetings={existingMeetings || []}
+                                existingTours={existingTours || []}
                                 selectedTime={selectedTime}
                                 onTimeSelect={setSelectedTime}
                             />

@@ -9,7 +9,7 @@ This project uses the following stack
 + [Convex DB](https://www.convex.dev)
 
 Guest appearance by the following made this quick 
-+ [Webstorm](https://www.jetbrains.com/help/webstorm/index.html]
++ [Webstorm](https://www.jetbrains.com/help/webstorm/index.html])
 + [Claude](https://www.claude.ai)]
  
 

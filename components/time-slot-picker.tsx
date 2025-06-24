@@ -5,12 +5,12 @@ import { generateTimeSlots, isTimeSlotAvailable } from "@/lib/utils";
 
 interface TimeSlotPickerProps {
     workingHours: { start: string; end: string };
-    selectedDate: string;
+    selectedDate?: string;
     blockedSlots: Array<{
         startTime?: string;
         endTime?: string;
     }>;
-    existingMeetings: Array<{
+    existingTours: Array<{
         startTime: string;
         endTime: string;
     }>;
@@ -20,9 +20,8 @@ interface TimeSlotPickerProps {
 
 export function TimeSlotPicker({
                                    workingHours,
-                                   selectedDate,
                                    blockedSlots,
-                                   existingMeetings,
+                                   existingTours,
                                    selectedTime,
                                    onTimeSelect,
                                }: TimeSlotPickerProps) {
@@ -36,7 +35,8 @@ export function TimeSlotPicker({
                     const isAvailable = isTimeSlotAvailable(
                         slot,
                         blockedSlots,
-                        existingMeetings
+                        existingTours,
+                        workingHours
                     );
 
                     return (
